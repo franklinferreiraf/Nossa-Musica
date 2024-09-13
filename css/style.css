@@ -2,14 +2,114 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    line-height: 1.6;
 }
 
 body {
-    background-color: #D9D9D9;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.slider {
+@media screen and (min-width: 25em) {
+
+    /* AJUSTE DE TELAS MENORES - HEADER */
+    #headerSite {
+        padding: 0;
+        margin: 0;
+    }
+
+    .telaMenores {
+        background-color: #32B061;
+        margin: 0;
+        padding: 5px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 70px;
+    }
+
+    .titleHeader {
+        color: #ffffff;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    /* FIM AJUSTE DE TELAS MENORES - HEADER */
+    
+    /* REMOVI */
+    .headerSection {
+        display: none;
+    }
+
+    #mainNav {
+        display: none;
+    }
+
+    /* LANÇAMENTO */
+    .mainLancamento {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .titleLancamento {
+        display: none; /* escondeu o titulo do lançamento */
+    }
+
+    #radio1,
+    #radio2,
+    #radio3,
+    #radio4 {
+        display: none; /* escondeu o radio */
+    }
+
+    .slide img {
+        width: 370px;
+    }
+
+    .slide:nth-of-type(2) img, 
+    .slide:nth-of-type(3) img {  
+        display: none; /* Oculta as imagens da segunda e última div */
+    }
+
+    /* LANÇAMENTO MAIN */
+    .lancamentoMain {
+        text-align: center;
+        height: 356px;
+        margin-bottom: 50px;
+    }
+
+    .lancamentoDivMain {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .lancamentoDivMain img {
+        width: 180px;
+    }
+
+    /* TOP CDS */
+    .topCdsData {
+        background-color: aqua;
+    }
+    .titleTopCds,
+    .titleData {
+        display: none; /* removi os titulos do top cd */
+    }
+}
+
+
+/* CARROSSEL */
+
+/* .slider {
     margin: 0 auto;
     width: 800px;
     height: 400px;
@@ -29,6 +129,7 @@ body {
 .slide {
     width: 25%;
     position: relative;
+    transition: 2s;
 }
 
 .slide img {
@@ -67,15 +168,11 @@ body {
     margin-left: -25%;
 }
 
-#radio1:checked ~ .first {
+#radio3:checked ~ .first {
     margin-left: -50%;
 }
 
-#radio1:checked ~ .first {
-    margin-left: -75%;
-}
-
-.navagation-auto div {
+.navigation-auto div{
     border: 2px solid #20a6ff;
     padding: 5px;
     border-radius: 10px;
@@ -83,7 +180,7 @@ body {
     transition: 1s;
 }
 
-.navagation-auto {
+.navigation-auto {
     position: absolute;
     width: 800px;
     margin-top: 360px;
@@ -91,33 +188,19 @@ body {
     justify-content: center;
 }
 
-.navagation-auto div:not(:last-child) {
+.navigation-auto div:not(:last-child) {
     margin-right: 40px;
 }
 
-#radio1:checked ~ .navagation-auto .auto-btn1 {
+#radio1:checked ~ .navigation-auto .auto-btn1 {
     background-color: #fff;
 }
 
-#radio1:checked ~ .navagation-auto .auto-btn2 {
+#radio2:checked ~ .navigation-auto .auto-btn2 {
     background-color: #fff;
 }
 
-#radio1:checked ~ .navagation-auto .auto-btn3 {
+#radio3:checked ~ .navigation-auto .auto-btn3 {
     background-color: #fff;
 }
-
-#radio1:checked ~ .navagation-auto .auto-btn4 {
-    background-color: #fff;
-}
-
-/* TELA PEQUENA - CELULAR 400PX */
-
-@media screen and (min-width: 400px) {
-    body {
-        background-color: aqua;
-    }
-    .headerSection, .containerNav {
-        display: none;
-    }
-}
+ */
