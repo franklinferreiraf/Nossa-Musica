@@ -1,11 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nossa Música</title>
+
+    <link rel="stylesheet" href="styleGrande.css">
 </head>
 <body>
-    
+    <!-- CABEÇALHO DO SITE -->
+     <header id="headerSite" class="headerMain">
+        <section class="headerSection">
+                <img src="/imagens/logo nossa musica.jpg" alt="Logo Nossa Música" class="logoHeader">
+                <form action="#" method="get">
+                    <input type="text" class="search-bar" placeholder="Busque por Artistas, CDs, playlists, nóticias" name="query">
+                    <input type="image" src="/icomoon/PNG/search.png" alt="Pesquisar" class="search-imagem">
+                </form>
+                <nav class="cadastroHeader">
+                    <a href="#" class="cadastreSe">Cadastre-se</a>
+                    <p>ou</p>
+                    <a href="#" class="entrar">Entrar</a>
+                </nav>
+        </section>
+     </header>
+     <!-- FIM CABEÇALHO DO SITE -->
+
+     <!-- NAV DO SITE -->
+      <nav class="containerNav" id="mainNav">
+        <ul class="ulMainNav">
+            <li><a href="#">Tops</a></li>
+            <li><a href="#">Playlists</a></li>
+            <li><a href="#">Estilos Musicais</a></li>
+            <li><a href="#">Notícias</a></li>
+        </ul>
+      </nav>
+      <!-- FIM NAV DO SITE -->
+
+      <!-- CONTÉUDO COMPLETO DO SITE -->
+       <main id="containerMain" class="main">
+
+        <!-- LANÇAMENTO DA SEMANA -->
+         <section class="mainLancamento">
+            <article class="lancamento">
+                <h3 class="titleLancamento">Lançamentos da Semana</h3>
+                <div class="vaziaLancamento"></div>
+            </article>
+
+            <!-- CARROSSEL -->
+            <div class="slider">
+                <!-- Radio Buttons -->
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <!-- Fim Radio Buttons -->
+
+                    <!-- Slide imagens -->
+                    <div class="slide first">
+                        <img src="/imagens/01. CARROSSEL - THIAGO AQUINO.JPG" alt="Thiago Aquino">
+                    </div>
+                    <div class="slide">
+                        <img src="/imagens/02. CARROSEL - DE BAR EM BAR - NATANZINHO LIMA.jpg" alt="Natanzinho Lima">
+                    </div>
+                    <div class="slide">
+                        <img src="/imagens/03. CARROSEL - EDSON GOMES.jpg" alt="Edson Gomes">
+                    </div>
+                    <!-- Fim Slide imagens -->
+
+                    <!-- Navagation auto -->
+                     <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                     </div>
+                </div>
+
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+            </div>
+            <!-- FIM CARROSSEL -->
+             <article class="lancamentoSemana">
+                <a href="#"><img src="/imagens/04. HEITOR COSTA.jpg" alt="Heitor Costa"></a>
+                <a href="#"><img src="/imagens/05. TOQUE DEZ.jpg" alt="Toque Dez"></a>
+                <a href="#"><img src="/imagens/06. WESLEY SAFADAO.jpg" alt="Wesley Safadão"></a>
+                <a href="#"><img src="/imagens/07. IGUINHO E LULINHA.jpg" alt="Iguinho e Lulinha"></a>
+             </article>
+         </section>
+         <!-- FIM LANÇAMENTO DA SEMANA -->
+
+         <!-- INÍCIO TOP CDS -->
+          <section class="topCds">
+            <article class="cds"></article>
+                <h3 class="titleTopCds">Top Cds</h3>
+                <h4 class="titleData">Dia / Semana / <span class="topCdsSpan">Mês</span> / Geral</h4>
+                <div class="topCdsVazia"></div>
+            </article>
+            <article class="topCds_cds">
+                <div class="silfarley">
+                    
+                </div>
+            </article>
+          </section>
+       </main>
 </body>
 </html>
